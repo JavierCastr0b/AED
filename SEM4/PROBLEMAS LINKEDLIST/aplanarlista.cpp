@@ -213,10 +213,36 @@ public:
     cout << "\n";
     }
 
-    Node* getHead(){
+     Node* getHead(){
         return head;
     };
-    
+
 
 
 };
+
+
+int main(){
+    int n;
+    cin>>n;
+    LinkedList lista;
+    for(int i = 0; i < n; i++){
+        int x;
+        cin >> x;
+        lista.push_back(x);
+    }
+
+
+    Node* actual = lista.getHead();
+    Node* child = actual;
+    while(actual != nullptr){
+        actual = actual->next;
+        
+
+
+    }
+
+
+
+
+}
